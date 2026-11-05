@@ -31,5 +31,35 @@
 }
 .hero{
     min-height : 500px;
+    display : flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items : center;
+    gap : 10px;
     background-color : #222;
+    background-image : url(https://images.unsplash.com/photo-1774989423979-6a7bf5add3f0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D);
+    background-size: cover;
+    background-repeat : no-repeat;
+    background-position : center;
+}
+#heroh2 {
+    font-size : 48px;
+    color : white;
+}
+#heropara{
+    font-size : 18px;
+    color : #cccccc;
+}
+#menubton{
+    padding : 12px 28px;
+    background-color : orange;
+    color : white ;
+    border : none ;
+    border-radius : 15px;
+    font-size : 16px;
+    cursor : pointer;
+    transition : background-color 0.3s ease;
+}
+#menubton:hover{
+    background-color : darkorange;
 }
