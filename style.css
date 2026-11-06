@@ -30,7 +30,7 @@
     color : orange;
 }
 .hero{
-    flex-wrap : wrap;
+    
     min-height : 500px;
     display : flex;
     flex-direction: column;
@@ -89,4 +89,44 @@
 #menubton {
     padding: 10px 22px;
 }
+}
+
+
+/* MENU CARD */
+
+
+.menu{
+    padding : 60px 20px;
+    font-size : 16px;
+    color : #cccccc;
+    background-color : #111;
+}
+.menu h2{
+    text-align: center;
+    font-size : 30px;
+    margin-bottom : 15px;
+}
+.menu p{
+    margin-bottom : 10px;
+    color : #cccccc;
+    font-size : 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.menu-container {
+    display : flex;
+    gap : 25px;
+}
+.menu-card {
+    width : 400px;
+    padding : 20px;
+    background-color : #222;
+    border-radius : 15px;
+}
+.menu-card h3{
+    padding-bottom: 10px;
+}
+.menu-card p{
+    text-decoration : none ;
+    font-size : 16px;
 }
