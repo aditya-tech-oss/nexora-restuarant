@@ -12,15 +12,15 @@
         <nav class="navigator">
             <h1>NEXORA</h1>
             <ul class="linklist">
-                <li> <a href="#">Home</a></li>
-                <li>  <a href="#">Menu</a></li>
-                <li> <a href="#">About</a></li>
-                <li > <a href="#">Contact</a> </li>
+                <li> <a href="#home">Home</a></li>
+                <li>  <a href="#menu">Menu</a></li>
+                <li> <a href="#about">About</a></li>
+                <li > <a href="#contact">Contact</a> </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <h2 id="heroh2">TASTE THE LUXURY</h2>
             <p id="heropara">Discover exceptional flavours, crafted with passion.</p>
             <button id="menubton">Explore Menu</button>
@@ -46,6 +46,28 @@
                 </div>
             </div>
         </section>
+        <section class="about" id="about">
+            <h2>OUR STORY</h2>
+            <p>At NEXORA, we believe dining is more than just food. It's an experience crafted with passion, elegance and unforgettable flavours.</p>
+        </section>
+        <section class="contact" id="contact">
+            <h2>GET IN TOUCH </h2>
+            <p>WE would love to hear from you.</p>
+            <form >
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <label for="textarea">Your Message</label>
+                <textarea id="textarea" name="message" placeholder="Your Message..." required></textarea>
+                <button type="submit"> Send message </button>
+            </form>
+        </section>
     </main>
+    <footer class="footer">
+    <h2>NEXORA</h2>
+    <p>Where Taste Meets Luxury.</p>
+    <p>© 2026 NEXORA. All Rights Reserved.</p>
+</footer>
 </body>
 </html>
