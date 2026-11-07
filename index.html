@@ -1,74 +1,377 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXORA-RESTURANT</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="first.js" defer></script>
+
+    <title>NEXORA | Luxury Dining</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- JAVASCRIPT FILE -->
+    <script src="./first.js" defer></script>
 </head>
+
 <body>
+
+    <!-- ================= HEADER ================= -->
+
     <header>
+
         <nav class="navigator">
-            <h1>NEXORA</h1>
+
+            <h1 class="logo">NEXORA<span>.</span></h1>
+
             <ul class="linklist">
-                <li> <a href="#home">Home</a></li>
-                <li>  <a href="#menu">Menu</a></li>
-                <li> <a href="#about">About</a></li>
-                <li > <a href="#contact">Contact</a> </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <a href="#contact" class="nav-button">Book a Table</a>
+
         </nav>
+
     </header>
+
+
+    <!-- ================= MAIN ================= -->
+
     <main>
+
+        <!-- HERO SECTION -->
+
         <section class="hero" id="home">
-            <h2 id="heroh2">TASTE THE LUXURY</h2>
-            <p id="heropara">Discover exceptional flavours, crafted with passion.</p>
-            <button id="menubton">Explore Menu</button>
-        </section>
-        <section  class="menu" id="menu">
-            <h2>OUR SPECIAL MENU </h2>
-            <p>Explore our delicous selection </p>
-            <div  class="menu-container">
-                <div class="menu-card">
-                    <h3>Paneer Tikka</h3>
-                    <p>Fresh Paneer marinated with aromatic Indian spices</p>
-                    <h4>₹249</h4>
-                </div>
-                <div class="menu-card">
-                    <H3>BURGER</H3>
-                    <p>Crispy patty with fresh vegetables</p>
-                    <h4>₹179</h4>
-                </div>
-                <div class="menu-card">
-                    <h3>White Sauce Pasta </h3>
-                    <p>Creamy pasta with Italian flavours </p>
-                    <h4>₹299</h4>
-                </div>
+
+            <div class="hero-content">
+
+                <p class="hero-tag">AN EXPERIENCE BEYOND TASTE</p>
+
+                <h2 id="heroh2">
+                    TASTE THE <span>LUXURY</span>
+                </h2>
+
+                <p id="heropara">
+                    Discover exceptional flavours, crafted with passion
+                    and served with elegance.
+                </p>
+
+                <button id="menubton">
+                    Explore Our Menu
+                </button>
+
             </div>
+
         </section>
+
+
+        <!-- ================= MENU SECTION ================= -->
+
+        <section class="menu" id="menu">
+
+            <div class="section-heading">
+
+                <p class="section-tag">OUR SELECTION</p>
+
+                <h2>DISCOVER OUR MENU</h2>
+
+                <p>
+                    Carefully selected dishes for an unforgettable experience.
+                </p>
+
+            </div>
+
+
+            <!-- MENU CATEGORY BUTTONS -->
+
+            <div class="category-buttons">
+
+                <button class="category-btn active" data-category="all">
+                    All
+                </button>
+
+                <button class="category-btn" data-category="indian">
+                    Indian
+                </button>
+
+                <button class="category-btn" data-category="continental">
+                    Continental
+                </button>
+
+                <button class="category-btn" data-category="dessert">
+                    Desserts
+                </button>
+
+            </div>
+
+
+            <!-- MENU CARDS -->
+
+            <div class="menu-container">
+
+                <!-- CARD 1 -->
+
+                <div class="menu-card" data-category="indian">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600"
+                        alt="Indian paneer curry">
+
+                    <div class="card-content">
+
+                        <h3>Paneer Tikka</h3>
+
+                        <p>
+                            Fresh paneer marinated with aromatic
+                            Indian spices.
+                        </p>
+
+                        <h4>₹249</h4>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 2 -->
+
+                <div class="menu-card" data-category="continental">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600"
+                        alt="Gourmet burger">
+
+                    <div class="card-content">
+
+                        <h3>Classic Burger</h3>
+
+                        <p>
+                            A crispy patty layered with fresh
+                            vegetables and signature sauce.
+                        </p>
+
+                        <h4>₹179</h4>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 3 -->
+
+                <div class="menu-card" data-category="continental">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600"
+                        alt="Italian pasta">
+
+                    <div class="card-content">
+
+                        <h3>White Sauce Pasta</h3>
+
+                        <p>
+                            Creamy pasta prepared with rich
+                            Italian-inspired flavours.
+                        </p>
+
+                        <h4>₹299</h4>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 4 -->
+
+                <div class="menu-card" data-category="indian">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"
+                        alt="Indian curry">
+
+                    <div class="card-content">
+
+                        <h3>Royal Indian Curry</h3>
+
+                        <p>
+                            A rich and flavourful curry made
+                            with traditional Indian spices.
+                        </p>
+
+                        <h4>₹279</h4>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 5 -->
+
+                <div class="menu-card" data-category="dessert">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600"
+                        alt="Chocolate cake">
+
+                    <div class="card-content">
+
+                        <h3>Chocolate Cake</h3>
+
+                        <p>
+                            A soft chocolate dessert for
+                            the perfect sweet ending.
+                        </p>
+
+                        <h4>₹199</h4>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 6 -->
+
+                <div class="menu-card" data-category="dessert">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600"
+                        alt="Ice cream dessert">
+
+                    <div class="card-content">
+
+                        <h3>Royal Ice Cream</h3>
+
+                        <p>
+                            Smooth and creamy ice cream
+                            with delightful flavours.
+                        </p>
+
+                        <h4>₹149</h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
         <section class="about" id="about">
-            <h2>OUR STORY</h2>
-            <p>At NEXORA, we believe dining is more than just food. It's an experience crafted with passion, elegance and unforgettable flavours.</p>
+
+            <div class="about-content">
+
+                <p class="section-tag">THE NEXORA EXPERIENCE</p>
+
+                <h2>MORE THAN JUST DINING.</h2>
+
+                <p>
+                    At NEXORA, we believe dining is more than just food.
+                    It is an experience built around exceptional flavours,
+                    warm hospitality and elegant surroundings.
+                </p>
+
+                <p>
+                    Every dish tells a story. Every visit creates
+                    a memory.
+                </p>
+
+            </div>
+
         </section>
+
+
+        <!-- ================= CONTACT SECTION ================= -->
+
         <section class="contact" id="contact">
-            <h2>GET IN TOUCH </h2>
-            <p>WE would love to hear from you.</p>
-            <form >
+
+            <div class="section-heading">
+
+                <p class="section-tag">GET IN TOUCH</p>
+
+                <h2>LET'S CONNECT</h2>
+
+                <p>
+                    Have a question or want to make an enquiry?
+                    Send us a message.
+                </p>
+
+            </div>
+
+
+            <form id="contact-form">
+
                 <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required>
+
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+
                 <label for="textarea">Your Message</label>
-                <textarea id="textarea" name="message" placeholder="Your Message..." required></textarea>
-                <button type="submit" id="submit"> Send message </button>
+
+                <textarea
+                    id="textarea"
+                    name="message"
+                    placeholder="Write your message here..."
+                    required></textarea>
+
+
+                <button type="submit" id="submit">
+                    Send Message
+                </button>
+
+                <p id="form-status" aria-live="polite"></p>
+
             </form>
-            <p id="form-status"></p>
+
         </section>
+
     </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
     <footer class="footer">
-    <h2>NEXORA</h2>
-    <p>Where Taste Meets Luxury.</p>
-    <p>© 2026 NEXORA. All Rights Reserved.</p>
-</footer>
+
+        <h2>NEXORA<span>.</span></h2>
+
+        <p>Where Taste Meets Luxury.</p>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 NEXORA. All Rights Reserved.
+        </p>
+
+    </footer>
+
 </body>
+
 </html>
